@@ -2,8 +2,8 @@ import numpy as np
 from copy import deepcopy
 from torch.optim import Adam
 import torch
-import Model.core_adv as core
-import Model.ggdo2 as ggdo2
+import core_adv as core
+import ggdo2 as ggdo2
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 class ReplayBuffer:   # 采样后输出为tensor
